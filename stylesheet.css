@@ -71,41 +71,6 @@ ul.nav a:hover {
     text-align: center;
 }
 
-@media (max-width: 1000px) {
-    ul.nav {
-        display: none;
-    }
-
-    .nav-mobile {
-        background-color: black;
-        display: inline-block;
-        float: right;
-        font-size: 80%;
-        text-decoration: none;
-        list-style-type: none;
-        margin-left: 150px;
-    }
-    .nav-mobile li {
-        /*margin: 3px;*/
-        margin-top: 6px;
-        display: inline-block;
-    }
-    .nav-mobile a {
-        font-size: medium;
-        color: white;
-        margin-right: 70px;
-        /*margin-left: 50px;*/
-        /*padding-right: 10px;*/
-        text-align: left;
-    }
-    .nav-mobile a:hover {
-        background-color: rgba(255, 255, 255, 0.3);
-        padding: 1px;
-        border-radius: 10px;
-    }
-}
-
-
 .bg-img {
     margin-top: -50px;
     margin-left: -10px;
@@ -118,11 +83,62 @@ ul.nav a:hover {
 .text {
     color: white;
     font-size: xxx-large;
-    display-inside: ruby;
     position: absolute;
     align-items: center;
     text-align: center;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1000px) {
+    ul.nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        background-color: black;
+        display: inline-block;
+        float: right;
+        text-decoration: none;
+        list-style-type: none;
+        margin-left: 150px;
+    }
+    .nav-mobile li {
+        /*margin: 3px;*/
+        margin-top: 30px;
+        margin-right: 30px;
+        display: inline-block;
+    }
+    .nav-mobile a {
+        color: white;
+        text-align: left;
+        font-size: small;
+        margin-top: 10px;
+    }
+    .nav-mobile a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 1px;
+        border-radius: 10px;
+    }
+
+    .bg-img {
+        margin-top: 4%;
+    }
+
+    #steak{
+        width: 104%;
+    }
+
+    .text {
+        color: white;
+        font-size: xxx-large;
+        /*display-inside: ruby;*/
+        position: absolute;
+        align-items: center;
+        text-align: center;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
