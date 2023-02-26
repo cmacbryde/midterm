@@ -1,8 +1,128 @@
 #logo {
-    
+    /*position: fixed;*/
+    /*right: 0px;*/
+    /*bottom: 0px;*/
+    /*height: 75px;*/
+    /*width: 67px;*/
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 200px;
+}
+
+.navbar {
+    background: black;
+    padding: 20px 20px 10px 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    overflow: hidden;
     position: fixed;
-    right: 0px;
-    bottom: 0px;
-    height: 75px;
-    width: 67px;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+ul.nav {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    float: right;
+    margin: 10px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+ul.nav a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    padding: 5px;
+}
+
+ul.nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+ul.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.footer {
+    position: fixed;
+    font-size: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #0c141b;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    ul.nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        background-color: black;
+        display: inline-block;
+        float: right;
+        font-size: 80%;
+        text-decoration: none;
+        list-style-type: none;
+        margin-left: 150px;
+    }
+    .nav-mobile li {
+        /*margin: 3px;*/
+        margin-top: 6px;
+        display: inline-block;
+    }
+    .nav-mobile a {
+        font-size: medium;
+        color: white;
+        margin-right: 70px;
+        /*margin-left: 50px;*/
+        /*padding-right: 10px;*/
+        text-align: left;
+    }
+    .nav-mobile a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 1px;
+        border-radius: 10px;
+    }
+}
+
+
+.bg-img {
+    margin-top: -50px;
+    margin-left: -10px;
+}
+
+#steak{
+    width: 101%;
+}
+
+.text {
+    color: white;
+    font-size: xxx-large;
+    display-inside: ruby;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
