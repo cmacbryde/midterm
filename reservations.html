@@ -1,0 +1,121 @@
+<html >
+    <head>
+        <link rel="stylesheet" type="text/css" href="online-order.css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>Lisa's Steakshouse - Online Order</title>
+    </head>
+<body>
+    <script>
+        function Location(name, startTime, endTime)
+		{
+			this.name = name;
+			this.startTime = startTime;
+            this.endTime = endTime;
+		}
+
+		locationsArray = new Array(
+			new Location("Seattle, WA", 11, 9),
+			new Location("Medford, MA", 10, 9),
+			new Location("Danville, CA", 11, 10),
+			new Location("Extra1", 12, 8),
+			new Location("Extra2", 11, 11)
+		);
+
+    </script>
+    <div class="container">
+        <h2>RESERVATIONS</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+
+		<!-- <p class="userInfo"><label>First Name:</label> <input type="text"  name='fname' /></p>
+		<p class="userInfo"><label>Last Name*:</label>  <input type="text"  name='lname' /></p> -->
+
+        <!-- location, time, number of ppl dropdown -->
+
+		<!-- <p class="userInfo"><label>Phone*:</label> <input type="text"  name='phone' /></p> -->
+        <h3>Location</h3>
+        <script>
+            // var t= "";
+			document.write("<select name='location' size='1'>");
+			for (let j=0; j<=locationsArray.length; j++) {
+            // var name = locationsArray[j].name;
+            document.write("<option>")
+            document.write(locationsArray[j].name);
+            document.write("</option>")
+            }
+
+			// t += "<option>"  + "</option>";
+
+            document.write("</select>");
+        </script>
+        <h3>Time</h3>
+        <script>
+            // should get selected location and then give time range for that one
+			document.write("<select name='time' size='1'>");
+			for (let j=0; j<=locationsArray.length; j++) {
+            document.write("<option>")
+            document.write(locationsArray[j].name);
+            document.write("</option>")
+            }
+
+			// t += "<option>"  + "</option>";
+
+            document.write("</select>");
+        </script>
+        <h3>Number of People</h3>
+        <script>
+            // var t= "";
+			document.write("<select name='num_ppl' size='1'>");
+			for (let j=0; j<=20; j++) {
+            // var name = locationsArray[j].name;
+            document.write("<option>")
+            document.write(j);
+            document.write("</option>")
+            }
+
+			// t += "<option>"  + "</option>";
+
+            document.write("</select>");
+        </script>
+		<!-- <table border="0" cellpadding="3">
+			<tr>
+			</tr>
+			<script>
+
+				var s = "";
+				for (i=0; i< menuItems.length; i++)
+				{
+					s += "<tr>";
+					s += td(makeSelect("quan" + i, 0, 10),"selectQuantity");
+					s += td(menuItems[i].name, "itemName");
+					s += td("$" +menuItems[i].cost.toFixed(2), "cost");
+					s += td("$<input type='text' name='cost'/>", "totalCost");
+					s+= "</tr>";
+				}
+				document.writeln(s);
+			</script>
+		</table>
+		<p class="subtotal totalSection"><label>Subtotal</label>: 
+		$ <input type="text"  name='subtotal' id="subtotal" />
+		</p>
+		<p class="tax totalSection"><label>Mass tax 6.25%:</label>
+		$ <input type="text"  name='tax' id="tax" />
+		</p>
+		<p class="total totalSection"><label>Total:</label> $ <input type="text"  name='total' id="total" />
+		</p> -->
+
+		<input type = "button" value = "Submit Order" />
+
+	</form>
+    </div>
+    
+
+</body>
+</html> 
