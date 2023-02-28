@@ -1,0 +1,289 @@
+<html >
+    <head>
+        <link rel="stylesheet" type="text/css" href="online-order.css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>Lisa's Steakshouse - Online Order</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="cart">
+            <h2>CART</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total"></div>
+        </div>
+        <h1>Online Order</h1>
+
+        <table>
+            <thread>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Add to Cart</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>Fried Onion Loaf</td>
+                    <td>Onion rings packed in loaf form</td>
+                    <td id="0">$12.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Nachos Platter</td>
+                    <td>Smothered with 'BIG ED'S CHILI'</td>
+                    <td id="1">$11.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Seafood Combo</td>
+                    <td>Fried shrimp, Calamari, & scallops</td>
+                    <td id="2">$10.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Frank's Bruschetta</td>
+                    <td>Garlic bread with chopped tomatoes, scallions, basil, & cheese</td>
+                    <td id="3">$9.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Calamari Sicilian</td>
+                    <td>Crisp Calamari tossed with garlic-infused olive oil & shredded Romano cheese</td>
+                    <td id="4">$15.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Southern fried chicken tenders</td>
+                    <td>With sweet & spicy dipping sauce</td>
+                    <td id="5">$14.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>French Onion Soup</td>
+                    <td>Baked with crouton & Swiss cheese</td>
+                    <td id="6">$8.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>New England Clam Chowder</td>
+                    <td>Potatoes, bacon, fresh clams</td>
+                    <td id="7">$9.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Rocket Salad</td>
+                    <td>Baby Arugula tossed with lemon-thyme dressing & garnished with walnuts & shredded parmesan</td>
+                    <td id="8">$9.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Greek Salad</td>
+                    <td>Mixed greens, tomato, cucumbers, onions, Feta cheese, Calamata olives & oregano</td>
+                    <td id="9">$10.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>All American Burger</td>
+                    <td>Topped with BBQ sauce, melted Cheddar, onion rings, lettuce, & tomato</td>
+                    <td id="10">$17.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Prime Rib French Dip on Ciabatta</td>
+                    <td>Hand-carved prime rib, Swiss cheese, and horseradish mayo</td>
+                    <td id="11">$18.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Frank's Fried Chicken Sandwich</td>
+                    <td>Bacon, Cheddar, & spicy sweet sauce</td>
+                    <td id="12">$10.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Filet Mignon (9 OZ.)</td>
+                    <td>with Tarragon Butter</td>
+                    <td id="13">$24.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Tomahawk Pork Chop</td>
+                    <td>served with mashed potatoes and a garden salad</td>
+                    <td id="14">$24.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Steak Caprese</td>
+                    <td>9 oz. seasoned Strip Sirloin served with sliced Beefsteak Tomato & sliced fresh Mozzarella under garlic-infused olive oil</td>
+                    <td id="15">$25.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+                <tr>
+                    <td>Lisa's famous NY Sirloin Sizzling Platter (THE SIZZLER)</td>
+                    <td>15-16 oz hand-cut bonesless NY Strip Sirloin served smokin' on a cast iron skillet</td>
+                    <td id="16">$35.00</td>
+                    <td><button name="add">Add</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="">Select Payment Method</option>
+                <option id="credit" value="credit" onclick="displayPayment(0)">Credit Card</option>
+                <option id="debit" value="debit" onclick="displayPayment(1)">Debit Card</option>
+            </select>
+
+            <div id="payment-input">
+                
+                <label for="number">Card Number:</label>
+                <input type="text" id="number" name="card-number" required>
+
+                <label for="date">Expiration Date:</label>
+                <input type="text" id="date" name="expiration-date" required>
+                
+                <label for="code">Security Code:</label>
+                <input type="text" id="code" name="security-code" required>
+            </div>
+            <input type="submit" value="Place Order" onclick="validateForm()">
+        </form>
+    </div>
+    <script>
+        let cart = {};
+        let total = 0;
+        var item;
+        let index = 0;
+
+        const paymentType = document.getElementById("payment");
+        const paymentInput = document.getElementById("payment-input");
+        paymentInput.style.display = "none";
+
+        paymentType.addEventListener("change", () => {
+            if (paymentType.value == "credit" || paymentType.value == "debit") {
+                paymentInput.style.display = "block";
+            } else {
+                paymentInput.style.display = "none";
+            }
+        });
+ 
+        function updateTotal()
+        {
+            var price = document.getElementById(index).textContent;
+            var num = price.substring(1, 6);
+            var cost = parseInt(num);
+            total += cost;
+
+            var subtotal = document.getElementsByClassName("cart-total")[0];
+            subtotal.innerHTML = "Subtotal: $" + total.toFixed(2) + "<br>";
+
+            var tax = 0.0625 * total;
+            subtotal.innerHTML += "Tax: $" + tax.toFixed(2) + "<br>";
+            subtotal.innerHTML += "Total: $" + (total + tax).toFixed(2);
+            quan = 0;
+        }
+
+        function validateForm()
+        {
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var phone = document.getElementById("address");
+            var address = document.getElementById("address");
+            var pattern = /^\d{10}$/;
+
+            var isValid = true;
+    
+            if (total == 0) {
+                alert("Order at least one item!");
+                isValid = false;
+            } else if (name.value == "") 
+            {
+                alert("Enter a valid name.");
+                isValid = false;
+            } else if (email.value == "") 
+            {
+                alert("Enter a valid email.");
+                isValid = false;
+            } else if (phone.value == "")
+            {
+                alert("Enter valid phone number.");
+                isValid = false;
+            } else if (address.value == "")
+            {
+                alert("Enter a valid address.");
+                isValid = false;
+            } else if (payment.value == "")
+            {
+                alert("Please select a payment method.");
+                isValid = false;
+            } else if (number.value == "") {
+                 alert("Please enter card number.");
+                 isValid = false;
+             } else if (date.value == "") {
+                 alert("Please enter card expiration date.");
+                 isValid = false;
+             } else if (code.value == "") {
+                 alert("Please enter card code.");
+                 isValid = false;
+            }
+    
+            if (isValid) {
+                alert("Thank you for your order!");
+            }
+  }
+
+        function addToCart(item)
+        {
+            if(cart[item]) {
+                cart[item] += 1;
+            } else {
+                cart[item] = 1;
+            }
+            updateCartDisplay(cart);
+        }
+
+        function updateCartDisplay(item)
+        {
+            let cartItemsDiv = document.querySelector(".cart-items");
+            let cartTotalDiv = document.querySelector(".cart-total");
+
+            cartItemsDiv.innerHTML = "";
+            cartTotalDiv.innerHTML = "";
+
+            for (let item in cart)
+            {
+                let quantity = cart[item];
+                quan = quantity;
+                let itemHTML = "<div>" + quantity + " " + item + "</div";
+                cartItemsDiv.innerHTML += itemHTML;
+            }
+            
+        }
+
+        let addButtons = document.getElementsByName("add");
+        for (let i = 0; i < addButtons.length; i++) {
+            addButtons[i].addEventListener("click", function() {
+                let item = addButtons[i].parentNode.parentNode.childNodes[1].textContent;
+                index = i;
+                addToCart(item);
+                updateTotal();
+            });
+        }
+
+    </script>
+
+</body>
+</html> 
