@@ -111,7 +111,20 @@ ul.nav a:hover {
     border-radius: 10px;
 }
 
-@media (max-width: 900px) {
+.sect1 {
+    padding: 90px;
+    max-width: 55%;
+}
+
+#welcome {
+    font-size: xx-large;
+}
+
+#welcome {
+
+}
+
+@media (max-width: 1000px) {
     ul.nav {
         display: none;
     }
