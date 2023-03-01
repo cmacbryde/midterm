@@ -1,10 +1,32 @@
 <html >
     <head>
         <link rel="stylesheet" type="text/css" href="online-order.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
         <title>Lisa's Steakshouse - Online Order</title>
     </head>
 <body>
+<nav class="navbar">
+    <a href="home.html"><img id="logo" src="logo2.png" alt=""></a>
+    <ul class="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="onlineorder.html">Order Online</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+    <ul class="nav-mobile">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="onlineorder.html">Order Online</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+
+</nav>
+<br/><br/><br/><br/><br/><br/><br/>
     <div class="container">
         <div class="cart">
             <h2>CART</h2>
@@ -162,6 +184,7 @@
             <input type="submit" value="Place Order" onclick="validateForm()">
         </form>
     </div>
+<br/><br/><br/><br/><br/>
     <script>
         let cart = {};
         let total = 0;
@@ -284,6 +307,9 @@
         }
 
     </script>
+<footer class="footer">
+    &copy; 2023 copyright Lisa's Steakhouse
+</footer>
 
 </body>
 </html> 
