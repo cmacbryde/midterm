@@ -92,15 +92,23 @@ ul.nav a:hover {
 }
 
 #menu-btn {
-    background: #edcfb6;
-    color: white;
+    background-color: #edcfb6;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
     font-size: large;
     position: absolute;
     align-items: center;
     text-align: center;
-    top: 56%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-color: #7c7c7c;
+}
+
+#menu-btn:hover {
+    background-color: #b78862;
+    border-radius: 10px;
 }
 
 @media (max-width: 900px) {
