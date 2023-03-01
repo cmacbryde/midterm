@@ -91,6 +91,18 @@ ul.nav a:hover {
     transform: translate(-50%, -50%);
 }
 
+#menu-btn {
+    background: #edcfb6;
+    color: white;
+    font-size: large;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media (max-width: 900px) {
     ul.nav {
         display: none;
