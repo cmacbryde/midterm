@@ -92,18 +92,39 @@ ul.nav a:hover {
 }
 
 #menu-btn {
-    background: #edcfb6;
-    color: white;
+    background-color: #edcfb6;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
     font-size: large;
     position: absolute;
     align-items: center;
     text-align: center;
-    top: 56%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-color: #7c7c7c;
 }
 
-@media (max-width: 900px) {
+#menu-btn:hover {
+    background-color: #b78862;
+    border-radius: 10px;
+}
+
+.sect1 {
+    padding: 90px;
+    max-width: 55%;
+}
+
+#welcome {
+    font-size: xx-large;
+}
+
+#welcome {
+
+}
+
+@media (max-width: 1000px) {
     ul.nav {
         display: none;
     }
