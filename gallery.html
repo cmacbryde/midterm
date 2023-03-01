@@ -1,0 +1,136 @@
+<html >
+    <head>
+        <link rel="stylesheet" type="text/css" href="style1.css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>Lisa's Steakshouse - Gallery</title>
+    </head>
+<body>
+    <div class="main">
+
+        <h1>Lisa's Steakhouse</h1>
+        <hr>
+        <h2>Image Gallery</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Show All</button>
+            <button class="btn" onclick="filterSelection('nature')">Nature</button>
+            <button class="btn" onclick="filterSelection('cars')">Cars</button>
+            <button class="btn" onclick="filterSelection('people')">People</button>
+        </div>
+
+        <div class="row">
+            <div class="column nature">
+                <div class="content">
+                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/8.jpg" alt="Onion Rings" style="width:100%">
+                    <h4>Onion Rings</h4>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="https://i.pinimg.com/originals/65/b0/76/65b076757bad637cfd2863e04ad728e1.jpg" alt="steak" style="width:100%">
+                    <h4>Clam Chowder</h4>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/9-1.jpg" alt="ribs" style="width:100%">
+                    <h4>Ribs</h4>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/6-1.jpg" alt="ribs" style="width:100%">
+                    <h4>View</h4>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/7-1.jpg" alt="ribs" style="width:100%">
+                    <h4>View2</h4>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/11.jpg" alt="ribs" style="width:100%">
+                    <h4>View3</h4>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/9-1.jpg" alt="ribs" style="width:100%">
+                    <h4>Ribs</h4>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/9-1.jpg" alt="ribs" style="width:100%">
+                    <h4>Ribs</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        filterSelection("all");
+        function filterSelection(c)
+        {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") 
+            {
+                c = "";
+            }
+            for (let i = 0; i < x.length; i++) 
+            {
+                removeClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) 
+                {
+                    addClass(x[i], "show");
+                }
+            }
+        }
+
+        function addClass(element, name)
+        {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (let i = 0; i < arr2.length; i++)
+            {
+                if (arr1.indexOf(arr2[i]) == -1)
+                {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function removeClass(element, name)
+        {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (let i = 0; i < arr2.length; i++) 
+            {
+                while(arr1.indexOf(arr2[i]) > -1)
+                {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+                element.className = arr1.join(" ");
+            }
+        }
+
+        var BtnContainer = document.getElementById("myBtnContainer");
+        var btns = BtnContainer.getElementsByClassName("btn");
+
+        for (let i = 0; i < btns.length; i++)
+        {
+            btns[i].addEventListener("click", function() {
+                var curr = document.getElementsByClassName("active");
+                curr[0].className = curr[0].className.replace("active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+</html>
