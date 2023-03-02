@@ -134,3 +134,9 @@ td:first-child {
     font-size: 20px;
 }
 
+th.type {
+    background-color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
