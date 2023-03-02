@@ -1,6 +1,6 @@
 <html >
     <head>
-        <link rel="stylesheet" type="text/css" href="style1.css" media="screen" />
+        <!-- <link rel="stylesheet" type="text/css" href="style1.css" media="screen" /> -->
         <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
         <title>Lisa's Steakshouse - Gallery</title>
@@ -136,7 +136,7 @@
         const galleryItems = document.querySelectorAll(".gallery-item");
         galleryItems.forEach(item => {
             item.addEventListener("click", () => {
-                const img = item.querySelector("img").src;
+                const imgSrc = item.querySelector("img").src;
             });
         });
     </script>
