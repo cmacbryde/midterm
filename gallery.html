@@ -18,9 +18,9 @@
         }
 
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 300px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
         }
 
@@ -68,7 +68,7 @@
 </nav>
 <br/><br/><br/><br/><br/><br/><br/>
     
-    <div class="main">
+    <div class="gallery">
         <h1>Image Gallery</h1>
 
         <div class="gallery-item">
@@ -141,7 +141,7 @@
             });
         });
     </script>
-
+    
 <footer class="footer">
     &copy; 2023 copyright Lisa's Steakhouse
 </footer>
