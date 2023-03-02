@@ -26,6 +26,14 @@ h1 {
     text-align: center;
     color: #333;
     margin-bottom: 30px;
+    font-size: 45;
+}
+
+h2 {
+    text-align: left;
+    color: #333;
+    /* margin-bottom: 30px; */
+    font-size: 30;
 }
 
 form {
