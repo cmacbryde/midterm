@@ -125,6 +125,7 @@ td:first-child {
     font-size: 16px;
     font-weight: bold;
     color: #333;
+    font-style: italic;
 }
 
 .cart-total {
@@ -139,5 +140,6 @@ th.type {
     text-align: center;
     font-style: italic;
     color: black;
+    font-size: 15px;
 }
 
