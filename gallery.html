@@ -5,6 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
         <title>Lisa's Steakshouse - Gallery</title>
     </head>
+    <style>
+        body {
+            background-color: black;   
+        }
+
+        h2 {
+            color: #edcfb6;
+            text-align: center;
+            font-size: 55px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
 <body>
 <nav class="navbar">
     <a href="home.html"><img id="logo" src="logo2.png" alt=""></a>
@@ -30,127 +68,77 @@
 </nav>
 <br/><br/><br/><br/><br/><br/><br/>
     <div class="main">
+        <h1>Image Gallery</h1>
 
-        <h1>Lisa's Steakhouse</h1>
-        <hr>
-        <h2>Image Gallery</h2>
-
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')">Show All</button>
-            <button class="btn" onclick="filterSelection('Appetizers')">Appetizers</button>
-            <button class="btn" onclick="filterSelection('Main Entrees')">Main Entrees</button>
-            <button class="btn" onclick="filterSelection('Dessert')">Dessert</button>
+        <div class="gallery-item">
+            <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/8.jpg" alt="onion rings">
         </div>
-
-        <div class="row">
-            <div class="column Appetizers">
-                <div class="content">
-                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/8.jpg" alt="Onion Rings" style="width:100%">
-                </div>
-            </div>
-            <div class="column Appetizers">
-                <div class="content">
-                    <img src="https://lh3.googleusercontent.com/93xlNZaqLQp1GYIxMe1C0xuAUE_IUMONIeTmnrSWH5CzqWUm42Jgl-qpKMrldJHJZAWb2rrTGmc1YpXcz8Qh6Zo=w1200-h630-pp-rj-v1-e365" alt="chowder" style="width:100%">
-                </div>
-            </div>
-            <div class="column Appetizers">
-                <div class="content">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Caesar_salad_(2).jpg" alt="salad" style="width:100%">
-                </div>
-            </div>
-            <div class="column Main Entrees">
-                <div class="content">
-                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/9-1.jpg" alt="ribs" style="width:100%">
-                </div>
-            </div>
-            <div class="column Main Entrees">
-                <div class="content">
-                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/6-1.jpg" alt="steak" style="width:100%">
-                </div>
-            </div>
-            <div class="column Main Entrees">
-                <div class="content">
-                    <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/7-1.jpg" alt="chop" style="width:100%">
-                </div>
-            </div>
-            <div class="column Dessert">
-                <div class="content">
-                    <img src="https://www.modernhoney.com/wp-content/uploads/2017/12/Red-Velvet-Cake-4-crop.jpg" alt="cake" style="width:100%">
-                </div>
-            </div>
-            <div class="column Dessert">
-                <div class="content">
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.gNxqir1onAl6G6UMKQ2lyQHaFF&pid=Api&P=0" alt="cookies" style="width:100%">
-                </div>
-            </div>
-            <div class="column Dessert">
-                <div class="content">
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.lf7LHdbtO_NEWOS9wd-0-AHaHa&pid=Api&P=0" alt="lava cake" style="width:100%">
-                </div>
-            </div>
+        <div class="gallery-item">
+            <img src="https://cdn.vox-cdn.com/thumbor/TIPRaiNuGrygo6dwelbWya4qinU=/0x0:2048x1365/1200x800/filters:focal(861x520:1187x846)/cdn.vox-cdn.com/uploads/chorus_image/image/54601285/18193203_1449096661778459_4653652558730786347_o.1493827679.jpg" alt="mac and cheese">
+        </div>
+        <div class="gallery-item">
+            <img src="https://thepubrestaurant.com/wp-content/uploads/2020/10/Fried-Mozzarella-Sticks.jpg" alt="mozzarella sticks">
+        </div>
+        <div class="gallery-item">
+            <img src="https://popmenucloud.com/cdn-cgi/image/width=1200,height=1200,fit=scale-down,format=auto,quality=60/gviqcaye/7fb49397-8150-44eb-a50b-11ad9516a59c" alt="scampi">
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Caesar_salad_(2).jpg" alt="salad">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.photosandfood.ca/wp-content/uploads/2020/09/DSC05642.jpg" alt="greek salad">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.popmenu.com/image/upload/c_limit,f_auto,h_1440,q_auto,w_1440/zmkfd0ha32flxudi4525.jpg" alt="french onion soup">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/93xlNZaqLQp1GYIxMe1C0xuAUE_IUMONIeTmnrSWH5CzqWUm42Jgl-qpKMrldJHJZAWb2rrTGmc1YpXcz8Qh6Zo=w1200-h630-pp-rj-v1-e365" alt="chowder">
+        </div>
+        <div class="gallery-item">
+            <img src="https://olo-images-live.imgix.net/d4/d4f5c4e88c1f4675be200ad4d437cb8c.jpeg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1200&h=800&fit=fill&fm=png32&bg=transparent&s=bce824d3393672bb1cbcb447f1cc3ccc" alt="burger">
+        </div>
+        <div class="gallery-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.3_GiGjTYq1fXckowZxvkFQHaE8&pid=Api&P=0" alt="BLT">
+        </div>
+        <div class="gallery-item">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.MPqQYHLuz6e3IUYl7NEaWgHaFj&pid=Api&P=0" alt="filet">
+        </div>
+        <div class="gallery-item">
+            <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/9-1.jpg" alt="ribs">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/736x/89/37/2a/89372a2e274f940bdc6fddc570e481f5.jpg" alt="surf & turf">
+        </div>
+        <div class="gallery-item">
+            <img src="http://www.frankssteakhouse.com/wp-content/uploads/2020/05/6-1.jpg" alt="steak">
+        </div>
+        <div class="gallery-item">
+            <img src="https://assets.kansascitysteaks.com/dyn-images/pdp_hero/Ribeye_-_prime_bone--fd22f08262531494f30a804b8073c90e.jpg" alt="chop">
+        </div>
+        <div class="gallery-item">
+            <img src="https://asset.homechef.com/uploads/meal/plated/3694/homechef_London_Broil__7_of_8_-9b4ee57dd700423618f9f11393ad0a43-9b4ee57dd700423618f9f11393ad0a43.jpg" alt="sirloin">
+        </div>
+        <div class="gallery-item">
+            <img src="http://cdn-image.myrecipes.com/sites/default/files/styles/300x300/public/image/recipes/ck/cream-puffs-ck-1599626-x.jpg?itok=1ks4HTUF" alt="puff">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/originals/06/6f/2f/066f2fbe7fe94022d0b2c91183fa7371.jpg" alt="sundae">
+        </div>
+        <div class="gallery-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.lf7LHdbtO_NEWOS9wd-0-AHaHa&pid=Api&P=0" alt="lava cake">
+        </div>
+        <div class="gallery-item">
+            <img src="http://1.bp.blogspot.com/_LuT4cCnLT1g/S76ZEbSL_SI/AAAAAAAAEGo/F0-9uqRggUw/s1600/IMG_6341.JPG" alt="gelato">
         </div>
     </div>
 
     <script>
-        filterSelection("all");
-        function filterSelection(c)
-        {
-            var x, i;
-            x = document.getElementsByClassName("column");
-            if (c == "all") 
-            {
-                c = "";
-            }
-            for (let i = 0; i < x.length; i++) 
-            {
-                removeClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) 
-                {
-                    addClass(x[i], "show");
-                }
-            }
-        }
-
-        function addClass(element, name)
-        {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (let i = 0; i < arr2.length; i++)
-            {
-                if (arr1.indexOf(arr2[i]) == -1)
-                {
-                    element.className += " " + arr2[i];
-                }
-            }
-        }
-
-        function removeClass(element, name)
-        {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (let i = 0; i < arr2.length; i++) 
-            {
-                while(arr1.indexOf(arr2[i]) > -1)
-                {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-                element.className = arr1.join(" ");
-            }
-        }
-
-        var BtnContainer = document.getElementById("myBtnContainer");
-        var btns = BtnContainer.getElementsByClassName("btn");
-
-        for (let i = 0; i < btns.length; i++)
-        {
-            btns[i].addEventListener("click", function() {
-                var curr = document.getElementsByClassName("active");
-                curr[0].className = curr[0].className.replace("active", "");
-                this.className += " active";
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        galleryItems.forEach(item => {
+            item.addEventListener("click", () => {
+                const img = item.querySelector("img").src;
             });
-        }
+        });
     </script>
 <footer class="footer">
     &copy; 2023 copyright Lisa's Steakhouse
