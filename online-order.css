@@ -143,3 +143,14 @@ th.type {
     font-size: 15px;
 }
 
+#payment-input label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#payment-input input {
+    display: inline-block;
+    width: 200px;
+}
