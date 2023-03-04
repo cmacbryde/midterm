@@ -47,7 +47,7 @@
             let isValid = true;
             // let phone_num = false;
             var name = document.getElementById("name");
-            var email = document.getElementById("email");
+            var email = document.getElementById("email").value;
             var phone = document.getElementById("phone").value;
             let location = document.getElementById("location");
             let day = document.getElementById("day");
@@ -60,15 +60,18 @@
 					phone_length++;
 				}
 			}
-			if (phone_length == 7 || phone_length == 10) {
-				phone_num = true;
+			let email_valid = false;
+            for (let i = 0; i < phone.length; i++) {
+				if (email[i] == "@") {
+					email_valid = true;
+				}
 			}
 
             if (name.value == "") 
             {
                 alert("Enter a valid name.");
                 isValid = false;
-            } else if (email.value == "") 
+            } else if (!email_valid) 
             {
                 alert("Enter a valid email.");
                 isValid = false;
@@ -91,7 +94,10 @@
             }
 
             if (isValid) {
-                alert("Your reservation has been made at our " + location.value + " location for " + num_ppl.value + " at " + time.value + " on " + day.value + ". We will see you there!")
+                alert("Your reservation has been made at our " + location.value + 
+                " location for " + num_ppl.value + " at " + time.value + " on " + 
+                day.value + ". A confirmation has been sent to " + email + 
+                ". We will see you there!");
             }
         }
 
