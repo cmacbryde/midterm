@@ -43,6 +43,58 @@
 			new Location("Extra2", 11, 11)
 		);
 
+        function validate() {
+            let isValid = true;
+            // let phone_num = false;
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var phone = document.getElementById("phone").value;
+            let location = document.getElementById("location");
+            let day = document.getElementById("day");
+            let time = document.getElementById("time");
+            let num_ppl = document.getElementById("num_ppl");
+
+            let phone_length = 0;
+			for (let i = 0; i < phone.length; i++) {
+				if (phone[i] >= 0 && phone[i] <= 9) {
+					phone_length++;
+				}
+			}
+			if (phone_length == 7 || phone_length == 10) {
+				phone_num = true;
+			}
+
+            if (name.value == "") 
+            {
+                alert("Enter a valid name.");
+                isValid = false;
+            } else if (email.value == "") 
+            {
+                alert("Enter a valid email.");
+                isValid = false;
+            } else if (phone_length != 7 && phone_length != 10)
+            {
+                alert("Enter valid phone number.");
+                isValid = false;
+            } else if (location.value == "") {
+                alert("Please select a location for the reservation.");
+                isValid = false;
+            } else if (day.value == "") {
+                alert("Please select a day for the reservation.");
+                isValid = false;
+            } else if (time.value == "") {
+                alert("Please select a time for the reservation.");
+                isValid = false;
+            } else if (num_ppl.value == "") {
+                alert("Please select a number of people for the reservation.");
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert("Your reservation has been made at our " + location.value + " location for " + num_ppl.value + " at " + time.value + " on " + day.value + ". We will see you there!")
+            }
+        }
+
     </script>
     <div class="container">
         <h2>RESERVATIONS</h2>
@@ -65,11 +117,11 @@
         <h3>Location*</h3>
         <select id="location" name="location" required>
             <option value="">Select Location</option>
-            <option id="0" value="0" onclick="locationSelect(0)">Seattle, WA</option>
-            <option id="1" value="1" onclick="locationSelect(1)">Medford, MA</option>
-            <option id="2" value="2" onclick="locationSelect(2)">Danville, CA</option>
-            <option id="3" value="3" onclick="locationSelect(3)">Los Altos, CA</option>
-            <option id="4" value="4" onclick="locationSelect(4)">Kuala Lumbr, Malaysia</option>
+            <option id="0" value="Seattle, WA" onclick="locationSelect(0)">Seattle, WA</option>
+            <option id="1" value="Medford, MA" onclick="locationSelect(1)">Medford, MA</option>
+            <option id="2" value="Danville, CA" onclick="locationSelect(2)">Danville, CA</option>
+            <option id="3" value="Los Altos, CA" onclick="locationSelect(3)">Los Altos, CA</option>
+            <option id="4" value="Kuala Lumbr, Malaysia" onclick="locationSelect(4)">Kuala Lumbr, Malaysia</option>
         </select>
         <!-- <script>
             // var t= "";
@@ -99,18 +151,18 @@
         <h3>Time*</h3>
         <select id="time" name="time" required>
             <option value="">Select Time</option>
-            <option id="0" value="0" onclick="timeSelect(0)">11</option>
-            <option id="1" value="1" onclick="timeSelect(1)">12</option>
-            <option id="2" value="2" onclick="timeSelect(2)">1</option>
-            <option id="3" value="3" onclick="timeSelect(3)">2</option>
-            <option id="4" value="4" onclick="timeSelect(4)">3</option>
-            <option id="5" value="5" onclick="timeSelect(4)">4</option>
-            <option id="6" value="6" onclick="timeSelect(4)">5</option>
-            <option id="7" value="7" onclick="timeSelect(4)">6</option>
-            <option id="8" value="8" onclick="timeSelect(4)">7</option>
-            <option id="9" value="9" onclick="timeSelect(4)">8</option>
-            <option id="10" value="10" onclick="timeSelect(4)">9</option>
-            <option id="11" value="11" onclick="timeSelect(4)">10</option>
+            <option id="0" value="11" onclick="timeSelect(0)">11</option>
+            <option id="1" value="12" onclick="timeSelect(1)">12</option>
+            <option id="2" value="1" onclick="timeSelect(2)">1</option>
+            <option id="3" value="2" onclick="timeSelect(3)">2</option>
+            <option id="4" value="3" onclick="timeSelect(4)">3</option>
+            <option id="5" value="4" onclick="timeSelect(4)">4</option>
+            <option id="6" value="5" onclick="timeSelect(4)">5</option>
+            <option id="7" value="6" onclick="timeSelect(4)">6</option>
+            <option id="8" value="7" onclick="timeSelect(4)">7</option>
+            <option id="9" value="8" onclick="timeSelect(4)">8</option>
+            <option id="10" value="9" onclick="timeSelect(4)">9</option>
+            <option id="11" value="10" onclick="timeSelect(4)">10</option>
         </select>
         <!-- <script>
             // should get selected location and then give time range for that one
@@ -128,12 +180,12 @@
         <h3>Number of People*</h3>
         <select id="num_ppl" name="num_ppl" required>
             <option value="">Select Time</option>
-            <option id="0" value="0" onclick="numPplSelect(0)">1</option>
-            <option id="1" value="1" onclick="numPplSelect(1)">2</option>
-            <option id="2" value="2" onclick="numPplSelect(2)">3</option>
-            <option id="3" value="3" onclick="numPplSelect(3)">4</option>
-            <option id="4" value="4" onclick="numPplSelect(4)">5</option>
-            <option id="5" value="5" onclick="numPplSelect(4)">6</option>
+            <option id="0" value="1" onclick="numPplSelect(0)">1</option>
+            <option id="1" value="2" onclick="numPplSelect(1)">2</option>
+            <option id="2" value="3" onclick="numPplSelect(2)">3</option>
+            <option id="3" value="4" onclick="numPplSelect(3)">4</option>
+            <option id="4" value="5" onclick="numPplSelect(4)">5</option>
+            <option id="5" value="6" onclick="numPplSelect(4)">6</option>
         </select>
 
         
@@ -178,7 +230,7 @@
 		<p class="total totalSection"><label>Total:</label> $ <input type="text"  name='total' id="total" />
 		</p> -->
 
-		<input type = "button" value = "Submit Order" />
+		<input type = "button" value = "Submit Order" onclick="validate()"/>
 
         <!-- When submit, say if valid and if so output, you have a reservation for {} at our {} location next {} at {}, we will send a confirmation to your email:  -->
 
