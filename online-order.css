@@ -5,11 +5,10 @@ body {
 
 button[name="add"] {
     color: #812509;
-    background-color: #e88161;
+    background-color: #e8b9ab;
 }
 
 button[name="add"]:hover {
-    background-color: #b78862;
     cursor: pointer;
 }
 
@@ -65,11 +64,14 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: top;
     transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #b78862;
+    background-color: #e8b9ab;
 }
 
 table {
