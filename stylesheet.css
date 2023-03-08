@@ -1,9 +1,4 @@
 #logo {
-    /*position: fixed;*/
-    /*right: 0px;*/
-    /*bottom: 0px;*/
-    /*height: 75px;*/
-    /*width: 67px;*/
     display: flex;
     position: absolute;
     top: 10px;
@@ -109,6 +104,7 @@ ul.nav a:hover {
 #menu-btn:hover, #location-btn:hover{
     background-color: #b78862;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .sect1 {
