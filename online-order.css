@@ -59,7 +59,7 @@ input[type="text"], select {
 }
 
 input[type="submit"] {
-    background-color: #743320;
+    background-color: #812509;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -85,7 +85,7 @@ th, td {
 }
 
 th {
-    background-color: #743320;
+    background-color: #812509;
     color: #fff;
 }
 
