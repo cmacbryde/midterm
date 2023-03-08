@@ -3,8 +3,7 @@
 <meta charset = "utf-8">
 <title> Contact Page </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylesheetLisas.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
 <head>
     <style>
         h1 {
@@ -111,7 +110,7 @@
             if (document.getElementById("lastname").value == "") {
                 missingItems += "Last Name\n"
             }
-            if (phone_length != 7 or phone_length != 10) {
+            if (phone_length != 7 || phone_length != 10) {
                 missingItems += "Invalid Phone Number\n"
             }
             if (document.getElementById("email").value == "") {
