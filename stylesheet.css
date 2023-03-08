@@ -86,7 +86,7 @@ ul.nav a:hover {
     transform: translate(-50%, -50%);
 }
 
-#menu-btn {
+#gallery-btn {
     background-color: #f1dbaf;
     padding: 10px;
     border-radius: 5px;
@@ -101,9 +101,8 @@ ul.nav a:hover {
     border-color: #7c7c7c;
 }
 
-#menu-btn:hover, #location-btn:hover{
+#gallery-btn:hover, #location-btn:hover, #full-menu:hover{
     background-color: #b78862;
-    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -171,6 +170,16 @@ ul.nav a:hover {
 h2#home-menu {
     text-align: center;
     font-size: 40pt;
+}
+
+#full-menu {
+    background-color: #f1dbaf;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: small;
+    display: block;
+    margin: 0 auto;
 }
 
 
