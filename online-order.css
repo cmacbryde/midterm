@@ -1,11 +1,11 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #5E2C04;
+    background-color: black;
 }
 
 button[name="add"] {
-    color: #333;
-    background-color: #edcfb6;
+    color: #812509;
+    background-color: #e88161;
 }
 
 button[name="add"]:hover {
@@ -59,7 +59,7 @@ input[type="text"], select {
 }
 
 input[type="submit"] {
-    background-color: #5E2C04;
+    background-color: #812509;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -85,7 +85,7 @@ th, td {
 }
 
 th {
-    background-color: #5E2C04;
+    background-color: #812509;
     color: #fff;
 }
 
