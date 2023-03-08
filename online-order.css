@@ -8,7 +8,7 @@ button[name="add"] {
 }
 
 button[name="add"]:hover {
-    background-color: #e7beb3;
+    background-color: #f3d0c6;
     cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     color: #812509;
-    background-color: #e7beb3;
+    background-color: #f3d0c6;
 }
 
 table {
