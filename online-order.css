@@ -77,7 +77,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #e8b9ab;
+    color: #812509;
+    background-color: #e9dcd8;
 }
 
 table {
