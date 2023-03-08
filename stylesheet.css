@@ -102,7 +102,7 @@ ul.nav a:hover {
     border-color: #7c7c7c;
 }
 
-#gallery-bt:hover, #location-btn:hover, #full-menu:hover{
+#gallery-btn:hover, #location-btn:hover, #full-menu:hover{
     background-color: #f3d0c6;
     cursor: pointer;
 }
