@@ -8,6 +8,7 @@ button[name="add"] {
 }
 
 button[name="add"]:hover {
+    background-color: #c6b8b4;
     cursor: pointer;
 }
 
@@ -24,7 +25,7 @@ h1 {
     text-align: center;
     color: black;
     margin-bottom: 30px;
-    font-size: 45px;
+    font-size: 45;
 }
 
 h2 {
@@ -77,7 +78,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #e8b9ab;
+    color: #812509;
+    background-color: #c6b8b4;
 }
 
 table {

@@ -73,6 +73,7 @@ ul.nav a:hover {
 
 #steak{
     width: 101%;
+    position: relative;
 }
 
 .text {
@@ -101,7 +102,7 @@ ul.nav a:hover {
     border-color: #7c7c7c;
 }
 
-#gallery-btn:hover, #location-btn:hover, #full-menu:hover{
+#gallery-bt:hover, #location-btn:hover, #full-menu:hover{
     background-color: #b78862;
     cursor: pointer;
 }
