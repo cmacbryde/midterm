@@ -9,7 +9,6 @@ button[name="add"] {
 }
 
 button[name="add"]:hover {
-    /* background-color: #e8b9ab; */
     cursor: pointer;
 }
 
