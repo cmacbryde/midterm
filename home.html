@@ -7,6 +7,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="index.js"></script>
 </head>
+<style>
+    table {
+        text-align:center;
+        color: rgb(15, 15, 15);
+        width: 50%
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
 <body>
 <nav class="navbar">
     <a href="home.html"><img id="logo" src="logo2.png" alt=""></a>
@@ -33,14 +49,14 @@
 <br/><br/><br/>
 
 <div class="bg-img">
-    <img id="steak" src="steak.jpeg" alt="steak">
+    <img id="steak" src="homesteak.jpeg" alt="steak">
     <h2 class="text">Best Steakhouse in Town</h2>
     <button id="menu-btn" onclick="window.location.href='menu.html'">See menu</button>
 </div>
 
 <section class="sect1">
     <h1 id="welcome">Welcome to Lisa's Steakhouse</h1>
-    <p>At Lisa's, we believe that a great steak starts with high-quality ingredients
+    <p id="welcome-msg">At Lisa's, we believe that a great steak starts with high-quality ingredients
         and expert preparation. That's why we source the finest cuts of beef and prepare
         them with care to ensure that every bite is tender, juicy, and
         bursting with flavor. But our steak isn't the only thing that sets us apart.
@@ -49,8 +65,59 @@
         you're celebrating a special occasion or just looking for a great meal, we invite
         you to join us at Lisa's Steakhouse. Browse our menu, make a reservation, or
         contact us with any questions. We can't wait to serve you!</p>
+    <div id="hours">
+        <h2>Opening Hours</h2>
+        <p>Daily: 10am-11pm</p>
+        <br/><br/>
+        <h2>Locations</h2>
+        <p>Seattle, WA</p>
+        <p>Medford, MA</p>
+        <p>Danville, CA</p>
+        <button id="location-btn" onclick="window.location.href='locations.html'">More locations</button>
+    </div>
 </section>
-<br/><br/><br/>
+<br/><br/>
+<div class="row">
+    <div class="column">
+       <a href="steak.jpeg" target="_blank"><img src="steak.jpeg" class="display"></a>
+    </div>
+    <div class="column">
+        <a href="ribs.jpeg" target="_blank"><img src="ribs.jpeg" class="display"></a>
+    </div>
+    <div class="column">
+        <a href="filet.jpeg" target="_blank"><img src="filet.jpeg" style="height: 88%" class="display"></a>
+    </div>
+    <div class="column">
+        <a href="sirloin.jpeg" target="_blank"><img src="sirloin.jpeg" class="display"></a>
+    </div>
+</div>
+
+<section id="Steaks">
+    <br/>
+    <table class = "center">
+        <h2 id="home-menu">Steaks</h2>
+        <tr>
+            <th><h3>Filet Mignon - $32</h3><h5>Classic filet served with lettuce and home fries</h5></th>
+            <th><h3>Flank Steak - $31</h3><h5>Juicy flank steak cooked to perfection</h5></th>
+        </tr>
+        <tr>
+            <th><h3>New York Strip Steak - $37</h3><h5>Salted and peppered with a hint of garlic</h5></th>
+            <th><h3>Ribeye - $39</h3><h5>A Lisa's special served with home fries</h5></th>
+        </tr>
+        <tr>
+            <th><h3>Surf & Turf - $47</h3><h5>Filet Mignon cooked to your liking with seared lobster</h5></th>
+            <th><h3>Prime Ribs - $32</h3><h5>half a rack of ribs with barbeque sauce. Full rack +$15</h5></th>
+        </tr>
+        <tr>
+            <th><h3>Wagyu Beef - $51</h3><h5>The finest cut beef with olive oil and home fries</h5></th>
+            <th><h3>Sirloin Steak - $34</h3><h5>Grilled to perfection with garlic and pesto sauce</h5></th>
+        </tr>
+        <tr>
+            <th><h3>Filet & Shrimp - $42</h3><h5>Filet Mignon cooked to your liking with seared shrimp</h5></th>
+            <th><h3>Bone-in Ribeye - $38</h3><h5>Grilled, flavorful bone-in classic</h5></th>
+        </tr>
+    </table><br/><br/><br/>
+</section>
 
 
 <footer class="footer">
