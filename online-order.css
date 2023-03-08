@@ -4,8 +4,8 @@ body {
 }
 
 button[name="add"] {
-    color: #333;
-    background-color: #edcfb6;
+    color: #812509;
+    background-color: #e88161;
 }
 
 button[name="add"]:hover {
