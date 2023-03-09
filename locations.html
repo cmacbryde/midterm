@@ -9,25 +9,123 @@
             h6 {color : #812509; text-align:center; padding-top: 10px; padding-bottom: 10px; font-size: 30px; font-weight: bold;}
             p {color : #812509; text-align:center; padding-top: 10px; padding-bottom: 10px; font-size: 20px; font-weight: bold; font-style: italic;}
             hr.dotted {border-top: 0.5px dotted #812509;}
+            
+            .footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: #49341f; padding-top: 20px; padding-bottom: 20px; text-align: center;}
+            #logo {
+                display: flex;
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                width: 200px;
+            }
+
+            .navbar {
+                background: black;
+                padding: 20px 20px 10px 30px;
+                margin-top: -15px;
+                margin-left: -15px;
+                overflow: hidden;
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .navbar a {
+                text-decoration: none;
+            }
+
+            .nav-mobile {
+                display: none;
+            }
+
+            ul.nav {
+                color: white;
+                text-align: center;
+                display: inline-block;
+                float: right;
+                margin: 10px;
+                padding: 30px;
+                overflow: hidden;
+            }
+
+            ul.nav a{
+                text-decoration: none;
+                list-style-type: none;
+                color: white;
+                padding: 5px;
+            }
+
+            ul.nav li {
+                list-style-type: none;
+                display: inline-block;
+                padding: 0 20px;
+            }
+
+            ul.nav a:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            .footer {
+                position: fixed;
+                font-size: 20px;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 5px;
+                background-color: #0c141b;
+                color: white;
+                text-align: center;
+            }
             @media (max-width: 1150px)
             {
-                ul.nav li {padding: 0 10px}
+                /* ul.nav li {padding: 0 10px} */
                 div.locations{padding-left:100px; padding-right:100px;}
             }
 
             @media (max-width: 700px)
             {
-                ul.nav li {padding: 0 10px}
-                ul.nav a {font-size: 18;}
+                /* ul.nav li {padding: 0 10px}
+                ul.nav a {font-size: 18;} */
                 h1 {font-size: 24px;}
                 h6 {font-size: 24px;}
                 p {font-size: 16;}
                 div.locations{padding-left:50px; padding-right:50px;}
             }
-            .footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: #49341f; padding-top: 20px; padding-bottom: 20px; text-align: center;}
+            @media (max-width: 1000px) {
+                ul.nav {
+                    display: none;
+                }
+
+                .nav-mobile {
+                    background-color: black;
+                    display: inline-block;
+                    float: right;
+                    text-decoration: none;
+                    list-style-type: none;
+                    margin-left: 150px;
+                }
+                .nav-mobile li {
+                    margin-top: 30px;
+                    margin-right: 30px;
+                    display: inline-block;
+                }
+                .nav-mobile a {
+                    color: white;
+                    text-align: left;
+                    font-size: small;
+                    margin-top: 10px;
+                }
+                .nav-mobile a:hover {
+                    background-color: rgba(255, 255, 255, 0.3);
+                    padding: 1px;
+                    border-radius: 10px;
+                }
+            }
         </style>
         <title>Locations</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+        <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" /> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     </head>
     <body >
