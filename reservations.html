@@ -47,7 +47,6 @@
 
         function validate() {
             let isValid = true;
-            // let phone_num = false;
             var name = document.getElementById("name");
             var email = document.getElementById("email").value;
             var phone = document.getElementById("phone").value;
@@ -106,143 +105,71 @@
     </script>
     <div class="container">
         <h1>RESERVATIONS</h1>
-    <form>
-        <label for="name"><h3>Name*:</h3></label>
-        <input type="text" id="name" name="name" required>
+        <form>
+            <label for="name"><h3>Name*:</h3></label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="email"><h3>Email*:</h3></label>
-        <input type="text" id="email" name="email" required>
+            <label for="email"><h3>Email*:</h3></label>
+            <input type="text" id="email" name="email" required>
 
-        <label for="phone"><h3>Phone:</h3></label>
-        <input type="text" id="phone" name="phone">
+            <label for="phone"><h3>Phone:</h3></label>
+            <input type="text" id="phone" name="phone">
 
-		<!-- <p class="userInfo"><label>First Name:</label> <input type="text"  name='fname' /></p>
-		<p class="userInfo"><label>Last Name*:</label>  <input type="text"  name='lname' /></p> -->
+            <h3>Location*</h3>
+            <select id="location" name="location" required>
+                <option value="">Select Location</option>
+                <option id="0" value="Seattle, WA" onclick="locationSelect(0)">Seattle, WA</option>
+                <option id="1" value="Medford, MA" onclick="locationSelect(1)">Medford, MA</option>
+                <option id="2" value="Danville, CA" onclick="locationSelect(2)">Danville, CA</option>
+                <option id="3" value="Los Altos, CA" onclick="locationSelect(3)">Los Altos, CA</option>
+                <option id="4" value="Kuala Lumbr, Malaysia" onclick="locationSelect(4)">Kuala Lumbr, Malaysia</option>
+            </select>
 
-        <!-- location, time, number of ppl dropdown -->
+            <h3>Day of the Week (reservations are only allowed one week in advance)*</h3>
+            <select id="day" name="day" required>
+                <option value="">Select Time</option>
+                <option id="Sunday" value="Sunday" onclick="daySelect(0)">Sunday</option>
+                <option id="Monday" value="Monday" onclick="daySelect(1)">Monday</option>
+                <option id="Tuesday" value="Tuesday" onclick="daySelect(2)">Tuesday</option>
+                <option id="Wednesday" value="Wednesday" onclick="daySelect(3)">Wednesday</option>
+                <option id="Thursday" value="Thursday" onclick="daySelect(4)">Thursday</option>
+                <option id="Friday" value="Friday" onclick="daySelect(5)">Friday</option>
+                <option id="Saturday" value="Saturday" onclick="daySelect(6)">Saturday</option>
+            </select>
 
-		<!-- <p class="userInfo"><label>Phone*:</label> <input type="text"  name='phone' /></p> -->
-        <h3>Location*</h3>
-        <select id="location" name="location" required>
-            <option value="">Select Location</option>
-            <option id="0" value="Seattle, WA" onclick="locationSelect(0)">Seattle, WA</option>
-            <option id="1" value="Medford, MA" onclick="locationSelect(1)">Medford, MA</option>
-            <option id="2" value="Danville, CA" onclick="locationSelect(2)">Danville, CA</option>
-            <option id="3" value="Los Altos, CA" onclick="locationSelect(3)">Los Altos, CA</option>
-            <option id="4" value="Kuala Lumbr, Malaysia" onclick="locationSelect(4)">Kuala Lumbr, Malaysia</option>
-        </select>
-        <!-- <script>
-            // var t= "";
-			document.write("<select name='location' size='1'>");
-			for (let j=0; j<=locationsArray.length; j++) {
-            // var name = locationsArray[j].name;
-            document.write("<option>")
-            document.write(locationsArray[j].name);
-            document.write("</option>")
-            }
+            <h3>Time*</h3>
+            <select id="time" name="time" required>
+                <option value="">Select Time</option>
+                <option id="0" value="11" onclick="timeSelect(0)">11</option>
+                <option id="1" value="12" onclick="timeSelect(1)">12</option>
+                <option id="2" value="1" onclick="timeSelect(2)">1</option>
+                <option id="3" value="2" onclick="timeSelect(3)">2</option>
+                <option id="4" value="3" onclick="timeSelect(4)">3</option>
+                <option id="5" value="4" onclick="timeSelect(4)">4</option>
+                <option id="6" value="5" onclick="timeSelect(4)">5</option>
+                <option id="7" value="6" onclick="timeSelect(4)">6</option>
+                <option id="8" value="7" onclick="timeSelect(4)">7</option>
+                <option id="9" value="8" onclick="timeSelect(4)">8</option>
+                <option id="10" value="9" onclick="timeSelect(4)">9</option>
+                <option id="11" value="10" onclick="timeSelect(4)">10</option>
+            </select>
 
-			// t += "<option>"  + "</option>";
+            <h3>Number of People*</h3>
+            <select id="num_ppl" name="num_ppl" required>
+                <option value="">Select Time</option>
+                <option id="0" value="1" onclick="numPplSelect(0)">1</option>
+                <option id="1" value="2" onclick="numPplSelect(1)">2</option>
+                <option id="2" value="3" onclick="numPplSelect(2)">3</option>
+                <option id="3" value="4" onclick="numPplSelect(3)">4</option>
+                <option id="4" value="5" onclick="numPplSelect(4)">5</option>
+                <option id="5" value="6" onclick="numPplSelect(4)">6</option>
+            </select>
 
-            document.write("</select>");
-        </script> -->
-        <h3>Day of the Week (reservations are only allowed one week in advance)*</h3>
-        <select id="day" name="day" required>
-            <option value="">Select Time</option>
-            <option id="Sunday" value="Sunday" onclick="daySelect(0)">Sunday</option>
-            <option id="Monday" value="Monday" onclick="daySelect(1)">Monday</option>
-            <option id="Tuesday" value="Tuesday" onclick="daySelect(2)">Tuesday</option>
-            <option id="Wednesday" value="Wednesday" onclick="daySelect(3)">Wednesday</option>
-            <option id="Thursday" value="Thursday" onclick="daySelect(4)">Thursday</option>
-            <option id="Friday" value="Friday" onclick="daySelect(5)">Friday</option>
-            <option id="Saturday" value="Saturday" onclick="daySelect(6)">Saturday</option>
-        </select>
-        <h3>Time*</h3>
-        <select id="time" name="time" required>
-            <option value="">Select Time</option>
-            <option id="0" value="11" onclick="timeSelect(0)">11</option>
-            <option id="1" value="12" onclick="timeSelect(1)">12</option>
-            <option id="2" value="1" onclick="timeSelect(2)">1</option>
-            <option id="3" value="2" onclick="timeSelect(3)">2</option>
-            <option id="4" value="3" onclick="timeSelect(4)">3</option>
-            <option id="5" value="4" onclick="timeSelect(4)">4</option>
-            <option id="6" value="5" onclick="timeSelect(4)">5</option>
-            <option id="7" value="6" onclick="timeSelect(4)">6</option>
-            <option id="8" value="7" onclick="timeSelect(4)">7</option>
-            <option id="9" value="8" onclick="timeSelect(4)">8</option>
-            <option id="10" value="9" onclick="timeSelect(4)">9</option>
-            <option id="11" value="10" onclick="timeSelect(4)">10</option>
-        </select>
-        <!-- <script>
-            // should get selected location and then give time range for that one
-			document.write("<select name='time' size='1'>");
-			for (let j=0; j<=locationsArray.length; j++) {
-            document.write("<option>")
-            document.write(locationsArray[j].name);
-            document.write("</option>")
-            }
+            <br>
 
-			// t += "<option>"  + "</option>";
+            <input type = "submit" value = "Make Reservation" onclick="validate()"/>
 
-            document.write("</select>");
-        </script> -->
-        <h3>Number of People*</h3>
-        <select id="num_ppl" name="num_ppl" required>
-            <option value="">Select Time</option>
-            <option id="0" value="1" onclick="numPplSelect(0)">1</option>
-            <option id="1" value="2" onclick="numPplSelect(1)">2</option>
-            <option id="2" value="3" onclick="numPplSelect(2)">3</option>
-            <option id="3" value="4" onclick="numPplSelect(3)">4</option>
-            <option id="4" value="5" onclick="numPplSelect(4)">5</option>
-            <option id="5" value="6" onclick="numPplSelect(4)">6</option>
-        </select>
-
-        
-        <!-- <script>
-            // var t= "";
-			document.write("<select name='num_ppl' size='1'>");
-			for (let j=0; j<=20; j++) {
-            // var name = locationsArray[j].name;
-            document.write("<option>")
-            document.write(j);
-            document.write("</option>")
-            }
-
-			// t += "<option>"  + "</option>";
-
-            document.write("</select>");
-        </script> -->
-		<!-- <table border="0" cellpadding="3">
-			<tr>
-			</tr>
-			<script>
-
-				var s = "";
-				for (i=0; i< menuItems.length; i++)
-				{
-					s += "<tr>";
-					s += td(makeSelect("quan" + i, 0, 10),"selectQuantity");
-					s += td(menuItems[i].name, "itemName");
-					s += td("$" +menuItems[i].cost.toFixed(2), "cost");
-					s += td("$<input type='text' name='cost'/>", "totalCost");
-					s+= "</tr>";
-				}
-				document.writeln(s);
-			</script>
-		</table>
-		<p class="subtotal totalSection"><label>Subtotal</label>: 
-		$ <input type="text"  name='subtotal' id="subtotal" />
-		</p>
-		<p class="tax totalSection"><label>Mass tax 6.25%:</label>
-		$ <input type="text"  name='tax' id="tax" />
-		</p>
-		<p class="total totalSection"><label>Total:</label> $ <input type="text"  name='total' id="total" />
-		</p> -->
-
-		<input type = "button" value = "Submit Order" onclick="validate()"/>
-
-        <!-- When submit, say if valid and if so output, you have a reservation for {} at our {} location next {} at {}, we will send a confirmation to your email:  -->
-
-	</form>
+        </form>
     </div>
     <br>
     <br>
