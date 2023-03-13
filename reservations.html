@@ -62,12 +62,13 @@
 					phone_length++;
 				}
 			}
-			let email_valid = false;
-            for (let i = 0; i < phone.length; i++) {
-				if (email[i] == "@") {
-					email_valid = true;
-				}
-			}
+			let email_valid = email.includes("@");
+            
+            // for (let i = 0; i < phone.length; i++) {
+			// 	if (email[i] == "@") {
+			// 		email_valid = true;
+			// 	}
+			// }
 
             if (name.value == "") 
             {
